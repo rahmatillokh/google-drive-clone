@@ -9,7 +9,9 @@ const RootLayout = ({ children }: ChildProps) => {
       <Navbar />
       <Sidebar />
       <main className="w-full min-h-[90vh] relative top-[10vh] pl-72 bg-[#f6f9fc] dark:bg-[#1f1f1f] p-4">
-        <div className="h-[85vh] p-8 rounded-md ml-4 bg-white dark:bg-black"></div>
+        <div className="h-[85vh] p-8 rounded-md ml-4 bg-white dark:bg-black">
+          {children}
+        </div>
       </main>
     </div>
   );
